@@ -27,10 +27,9 @@
         &nbsp;
         <a href="https://github.com/BerriAI/litellm/pull/25610"><img src="https://img.shields.io/badge/PR_%2325610-Merged-8957e5?style=flat-square&logo=git&logoColor=white" alt="PR Merged" /></a>
       </h3>
-      <p><b>Added pricing configuration, model specs, and regression tests for Gemini 3.1 Flash Lite Preview</b></p>
       <ul>
-        <li>Implemented accurate cost tracking and token rate calculation for Google Gemini 3.1 Flash Lite via OpenRouter.</li>
-        <li>Wrote automated unit & regression tests ensuring deterministic pricing evaluations across LLM routing workflows.</li>
+        <li>Implemented pricing specs and token cost calculations for Google Gemini 3.1 Flash Lite via OpenRouter.</li>
+        <li>Added automated unit and regression tests ensuring deterministic pricing evaluations across routing workflows.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -55,12 +54,9 @@
         <img src="https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white" />
         <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" />
       </p>
-      <p><b>Autonomous multi-agent software engineering platform.</b> Moves beyond naive single-prompt code generation into an observable, verified distributed system.</p>
       <ul>
-        <li><b>LangGraph Orchestration:</b> Multi-agent state graph with durable checkpointing, retry loops, and human-in-the-loop pause/resume hooks.</li>
-        <li><b>Hybrid Repo Retrieval:</b> Dense semantic embeddings + BM25 sparse keyword search combined via Reciprocal Rank Fusion (RRF) and cross-encoder reranking.</li>
-        <li><b>Tool Sandbox & Queues:</b> Real MCP (Model Context Protocol) client/server execution sandbox with asynchronous task queues via RabbitMQ.</li>
-        <li><b>Observability:</b> End-to-end tracing and metrics instrumentation with OpenTelemetry, Prometheus, and Grafana.</li>
+        <li>Autonomous multi-agent platform orchestrated via LangGraph with durable state checkpointing and human-in-the-loop controls.</li>
+        <li>Hybrid repository retrieval (dense embeddings + BM25 + cross-encoder reranking) with MCP tool execution over RabbitMQ.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -71,12 +67,9 @@
         <img src="https://img.shields.io/badge/Qdrant-DC2626?style=flat-square" />
         <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
       </p>
-      <p><b>Distributed LLM serving & inference routing mesh</b> demonstrating the real architectural mechanics behind production AI infrastructure.</p>
       <ul>
-        <li><b>Dynamic Inference Router:</b> Policy-based model routing with adaptive circuit breakers to prevent cascading service degradation.</li>
-        <li><b>Hybrid RAG Pipeline:</b> Dual retrieval from Elasticsearch (BM25) and Qdrant (dense vectors) fused through score-agnostic RRF.</li>
-        <li><b>Tiered Caching:</b> Exact and semantic caching layer in Redis to eliminate redundant LLM calls under repeated traffic.</li>
-        <li><b>Streaming & Ingestion:</b> Non-blocking async document ingestion with real-time Server-Sent Events (SSE) token streaming.</li>
+        <li>Distributed LLM serving mesh with dynamic multi-model routing, circuit breaker failovers, and real-time SSE streaming.</li>
+        <li>Hybrid RAG combining Elasticsearch BM25 and Qdrant dense vectors via RRF, backed by Redis exact and semantic caching.</li>
       </ul>
     </td>
   </tr>
@@ -89,12 +82,9 @@
         <img src="https://img.shields.io/badge/BM25_+_Dense-38BDF8?style=flat-square" />
         <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
       </p>
-      <p><b>Production-style hybrid RAG platform</b> engineered to benchmark and evaluate retrieval decisions separating toy demos from robust deployments.</p>
       <ul>
-        <li><b>Dual-Channel Retrieval:</b> Solves vocabulary mismatch by combining lexical exact matching (BM25) with semantic paraphrase vectors (pgvector).</li>
-        <li><b>Rank Fusion & Reranking:</b> Fuses disparate ranking distributions via RRF and refines top contexts using a cross-encoder model.</li>
-        <li><b>Redis Query Caching:</b> Sub-millisecond latency on cache hits with automated invalidation.</li>
-        <li><b>IR Evaluation Harness:</b> Automated evaluation measuring Recall@K, MRR, and NDCG alongside Prometheus performance metrics.</li>
+        <li>Production hybrid RAG platform pairing pgvector dense embeddings with BM25 sparse lexical retrieval.</li>
+        <li>Features Reciprocal Rank Fusion (RRF), cross-encoder reranking, Redis caching, and an automated IR evaluation harness.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -105,12 +95,9 @@
         <img src="https://img.shields.io/badge/Butterbase_MCP-10B981?style=flat-square" />
         <img src="https://img.shields.io/badge/XTrace-8B5CF6?style=flat-square" />
       </p>
-      <p><b>Autonomous cost-and-priority brain for engineering backlogs.</b> Reads your codebase and tickets to make intelligent routing decisions inside budget.</p>
       <ul>
-        <li><b>Multi-Agent Runtime:</b> RocketRide pipeline coordinates estimation, budget allocation, model selection, context compilation, and monitoring.</li>
-        <li><b>Dynamic Claude Routing:</b> Directs complex architectures to Claude Opus and routine patches to Haiku, maximizing throughput per dollar.</li>
-        <li><b>Butterbase MCP Server:</b> Integrated Model Context Protocol backend handling ticketing state, authentication, and gateway switching.</li>
-        <li><b>Memory & Proactive Alerts:</b> XTrace episodic memory resolves ticket contradictions; Photon pushes proactive iMessage notifications.</li>
+        <li>Autonomous engineering backlog brain routing tasks to right-sized Claude models based on budget, complexity, and priority.</li>
+        <li>Built on RocketRide agent pipeline, Butterbase MCP server gateway, XTrace episodic memory, and Photon proactive alerts.</li>
       </ul>
     </td>
   </tr>
@@ -123,12 +110,9 @@
         <img src="https://img.shields.io/badge/SwiftData-5856D6?style=flat-square" />
         <img src="https://img.shields.io/badge/OAuth_2.0_PKCE-232F3E?style=flat-square" />
       </p>
-      <p><b>Native macOS application</b> turning incoming emails into an intelligent, automatically maintained job-application pipeline.</p>
       <ul>
-        <li><b>Mail Ingestion:</b> OAuth 2.0 PKCE Gmail sync and streaming parser capable of processing multi-GB Google Takeout <code>.mbox</code> archives.</li>
-        <li><b>Batch LLM Classification:</b> Multi-provider inference (NVIDIA NIM, OpenAI, Groq) with ATS heuristic prefilters to avoid API waste.</li>
-        <li><b>Smart Thread Matching:</b> Correlates companies, roles, and recruiters into structured timelines with duplicate deduplication.</li>
-        <li><b>Local-First Privacy:</b> Zero external tracking databases; all records stay on device in SwiftData and Apple Keychain.</li>
+        <li>Native macOS application syncing Gmail via OAuth 2.0 PKCE and streaming multi-GB <code>.mbox</code> Google Takeout archives.</li>
+        <li>Batch LLM classification with ATS prefiltering, smart timeline matching, and 100% local-first SwiftData storage.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -139,11 +123,9 @@
         <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
       </p>
-      <p><b>Autonomous job aggregator</b> orchestrated with 3 parallel LLM agents running on scheduled serverless workflows.</p>
       <ul>
-        <li><b>Parallel LLM Workers:</b> Concurrent Python/asyncio agents (Claude, Gemini, OpenAI) query distinct portals every 6 hours.</li>
-        <li><b>Visa & Resume Matcher:</b> Automatic F1/OPT visa sponsorship filtering and semantic resume matching against live Google Drive documents.</li>
-        <li><b>Automated Pipeline:</b> Results are deduplicated, stored in PostgreSQL, compiled into Gmail digests, and displayed on a React dashboard.</li>
+        <li>Autonomous job aggregator running 3 parallel LLM agents (Claude, Gemini, OpenAI) via scheduled GitHub Actions cron workflows.</li>
+        <li>Performs automated F1/OPT visa filtering, Google Drive resume matching, Gmail digests, and React dashboard tracking.</li>
       </ul>
     </td>
   </tr>
@@ -156,11 +138,9 @@
         <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" />
         <img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" />
       </p>
-      <p><b>Scalable Real-Time Event and Analytics Machine</b> for distributed high-throughput transportation network analysis.</p>
       <ul>
-        <li><b>Streaming Ingestion:</b> High-velocity Kafka producer and Kafka Connect pipeline streaming data into Neo4j graph nodes.</li>
-        <li><b>Graph Analytics:</b> Runs PageRank and Breadth-First Search (BFS) algorithms using Neo4j Graph Data Science to identify traffic hubs.</li>
-        <li><b>Cluster Deployment:</b> Fully containerized microservices managed on Kubernetes with custom Helm charts and Zookeeper coordination.</li>
+        <li>Distributed real-time streaming pipeline ingesting transportation trip data via Apache Kafka into Neo4j graph nodes.</li>
+        <li>Executes PageRank and BFS graph algorithms on Kubernetes-orchestrated microservices deployed with Helm charts.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -170,11 +150,9 @@
         <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
         <img src="https://img.shields.io/badge/Vision_Transformers-38BDF8?style=flat-square" />
       </p>
-      <p><b>Empirical research benchmark</b> investigating optimizer convergence on Vision Transformer (ViT) architectures.</p>
       <ul>
-        <li><b>7-Optimizer Evaluation:</b> Systematic comparative study of Adam, AdamW, AdaBelief, RAdam, AdaGrad, AdaDelta, and SGD on CIFAR-10/100.</li>
-        <li><b>Performance Benchmarks:</b> AdamW with decoupled weight decay reached 92.96% accuracy on CIFAR-10; AdaBelief with decoupled decay achieved 74.85% on CIFAR-100.</li>
-        <li><b>Data Augmentations:</b> Explored rotation and contrast shifts, boosting model generalization and stability.</li>
+        <li>Empirical benchmark comparing 7 optimizers (Adam, AdamW, AdaBelief, RAdam, SGD, etc.) on Vision Transformers across CIFAR-10/100.</li>
+        <li>Achieved 92.96% accuracy on CIFAR-10 with AdamW decoupled weight decay and 74.85% on CIFAR-100 with decoupled AdaBelief.</li>
       </ul>
     </td>
   </tr>
@@ -228,25 +206,3 @@
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" />
 </p>
-
----
-
-### 📊 Repository & Activity Metrics
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats-fast.vercel.app/api?username=iamsiddhu3007&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9" alt="GitHub Stats" />
-      </td>
-      <td align="center" width="50%">
-        <img src="https://streak-stats.demolab.com?user=iamsiddhu3007&theme=tokyonight&hide_border=true&background=0D1117&stroke=38BDF8&ring=38BDF8&fire=FF7B72&currStreakLabel=38BDF8" alt="GitHub Streak" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=iamsiddhu3007&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-</div>
