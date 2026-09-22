@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+[![Sid's GitHub stats](https://github-stats-extended.vercel.app/api?username=iamsiddhu3007)](https://github.com/stats-organization/github-stats-extended)
 <!--
 **iamsiddhu3007/iamsiddhu3007** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
