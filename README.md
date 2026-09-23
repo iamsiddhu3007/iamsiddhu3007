@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Mohana Siddhartha Chivukula</h1>
+  <h1>Siddhartha Chivukula</h1>
   <p><b>Software Engineer · AI Infrastructure, Distributed Systems & Multi-Agent Platforms</b></p>
 
   <a href="https://github.com/iamsiddhu3007">
